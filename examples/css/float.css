@@ -1,0 +1,13 @@
+img {
+    width: 200px;
+    float: left;
+    margin: 24px
+}
+
+p {
+    background-color: pink
+}
+
+#clear {
+    clear: both;
+}
