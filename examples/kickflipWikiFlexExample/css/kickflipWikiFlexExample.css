@@ -1,0 +1,121 @@
+#main {
+    line-height: 1.7;
+    margin: 30px
+}
+
+#main p {
+    margin-right: 30px
+}
+
+hr {
+    margin-right: 30px
+}
+
+#Contents {
+    background-color: rgb(245, 239, 239);
+    border: 2px solid gray;
+    padding: 1px;
+    width: 146px;
+    font-family: sans-serif;
+}
+
+#Contents h4 {
+      margin-left: 7px
+}
+#Contents span {
+    font-weight: normal;
+    color: blue
+}
+
+#Contents ol {
+    padding: 0px 25px;
+}
+
+#sidebar {
+    background-color: rgb(245, 239, 239);
+    float: right;
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 20px;
+}
+
+.sideBySide {
+    display: flex;
+    margin: 8px;
+}
+
+.sideBySide span {
+    text-align: left;
+}
+
+.sideBySide span:first-child {
+    font-weight: bold;
+    width: 100px;
+}
+
+.caption {
+    text-align: center
+}
+
+#sidebar h3 {
+    text-align: center;
+}
+}
+
+#kickflip div {
+    margin: 2px;
+    font-family: sans-serif;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+ul {
+    font-family: sans-serif;
+    margin-right: 30px;
+}
+
+ul span {
+    color: blue;
+}
+
+h4 {
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+#kickflipTransfer {
+    background-color: rgb(245, 239, 239);
+    float: right;
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 5px 30px;
+}
+
+#kickflipTransfer > img {
+    height: 147px;
+}
+
+#kickflipTransfer div {
+    overflow-wrap: break-word;
+    inline-size: 220px;
+    font-family: sans-serif;
+}
+#kickflipFlat > img {
+    height: 147px;
+}
+
+#kickflipFlat {
+    background-color: rgb(245, 239, 239);
+    padding: 5px;
+    border: 1px solid gray;
+    margin: 5px 30px;
+    float: right;
+}
+
+#kickflipFlat div {
+    inline-size: 220px;
+    overflow-wrap: break-word;
+    font-family: sans-serif;
+}
