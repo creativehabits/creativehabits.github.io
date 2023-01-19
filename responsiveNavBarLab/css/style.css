@@ -1,0 +1,60 @@
+nav {
+    background-color: lightslategray;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    padding: 0px;
+}
+
+nav > ul > li {
+    padding: 12px;
+    background-color: lightslategrey
+}
+
+nav > ul > li:hover {
+    background-color: lightgray;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    display: none;
+    list-style-type: none;
+    padding: 0px;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    left: 0px;
+    top: 100%;
+}
+
+.dropdown:hover ul {
+    display: flex;
+}
+
+.dropdown ul li {
+    background-color: lightgray;
+    padding: 12px;
+}
+
+main img {
+    width: 100%;
+}
+
+#yoi {
+    margin-right: auto;
+}
