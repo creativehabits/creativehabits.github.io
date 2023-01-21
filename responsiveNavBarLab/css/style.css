@@ -1,5 +1,10 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 nav {
     background-color: lightslategray;
+    border-bottom: lime solid 2px;
 }
 
 nav img {
@@ -11,11 +16,17 @@ nav a {
     color: black;
 }
 
+nav a:hover {
+    color: white;
+}
+
 nav > ul {
     display: flex;
     list-style-type: none;
     justify-content: right;
     padding: 0px;
+    margin: 0px auto;
+    max-width: 800px;
 }
 
 nav > ul > li {
@@ -24,9 +35,9 @@ nav > ul > li {
     transition: background-color 0.5s;
 }
 
-nav > ul > li:hover {
+/* nav > ul > li:hover {
     background-color: lightgray;
-}
+} */
 
 .dropdown {
     position: relative;
@@ -55,37 +66,42 @@ nav > ul > li:hover {
 }
 
 .dropdown ul li {
-    background-color: lightgray;
+    background-color: lightslategray;
     padding: 12px;
 }
 
 .dropdown ul a {
-    background-color: lightgray;
     display: inline-block;
     padding: 4px;
-    width: 150px;
+    width: 100px;
 }
 
 .dropdown ul li a:hover {
     color: white;
+    font-weight: bold;
 }
 
 body {
     margin: 0px;
 }
 
-main #ropes {
+#ropes {
     width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: bottom;
 }
 
 #yoi {
     margin-right: auto;
+    font-weight: bold;
 }
 
 .textAndImage {
     align-items: center;
     display: flex;
-    margin: 24px;
+    margin: 24px auto;
+    max-width: 800px;
 }
 
 .textBlock {
@@ -132,3 +148,40 @@ main #ropes {
         order: 1;
     }
 }
+
+
+
+
+
+
+/* Mens Page Code Below */
+
+h1 {
+    text-align: center;
+}
+
+.mensImageBlock {
+    display: flex;
+}
+
+.mensImageBlock img {
+    width: 100%;
+    border-radius: 24px;
+    margin: 24px;
+}
+
+.mensTextBlock {
+    margin: 24px;
+}
+
+.mensImageBlock div {
+    flex: 1;
+    margin: 20px;
+}
+
+/* Womens page Code below */
+
+h2 {
+    text-align: center;
+}
+
