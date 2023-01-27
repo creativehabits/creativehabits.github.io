@@ -53,3 +53,28 @@ form input[type=submit] {
     color: white;
     padding: 16px 24px;
 }
+
+input:invalid {
+    color: white;
+    background-color: red;
+    box-shadow: 0px 0px 16px red;
+    animation: invalidWiggle 1s infinite;
+}
+
+@keyframes invalidWiggle {
+    0% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(-15px);
+    }
+
+    75% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
