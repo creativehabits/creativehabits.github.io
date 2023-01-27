@@ -138,8 +138,13 @@ a {
     margin: 24px;
 }
 
-input:invalid {
+input:invalid,
+#phoneOrEmailInput:invalid {
     border-color: red;
     background-color: lightpink;
 }
 
+input:valid,
+#phoneOrEmailInput:valid {
+    border-color: lightgreen
+}
