@@ -26,6 +26,7 @@ header {
     border: 2px solid #DFDFDF;
     grid-area: content;
     padding: 32px;
+    border-radius: 12px;
 }
 
 form label {
@@ -35,11 +36,13 @@ form label {
 }
 
 form input[type=text],
+form input[type=email],
 form textarea,
 form select {
     padding: 12px;
     width: 100%;
     margin-bottom: 16px;
+    border-radius: 9px;
 }
 
 textarea::placeholder {
@@ -57,11 +60,19 @@ form input[type=submit] {
 input:invalid {
     color: white;
     background-color: red;
+    border-color: orange;
     box-shadow: 0px 0px 16px red;
-    animation: invalidWiggle 1s infinite;
+    /* animation: invalidWiggle 1s infinite; */
 }
 
-@keyframes invalidWiggle {
+form input[type=email]:invalid {
+    background-color: orange;
+    border-color: red;
+    color: white;
+
+}
+
+/* @keyframes invalidWiggle {
     0% {
         transform: translateX(0px);
     }
@@ -77,4 +88,35 @@ input:invalid {
     100% {
         transform: translateX(0px);
     }
+} */
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: black;
+    }
+
+    #gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "header"
+            "content";
+    }
+
+    header {
+        color: white;
+    }
+
+    #formContainer {
+        background-color: darkgrey;
+        border-color: gray;
+    }
+
+    form input[type=text],
+    form input[type=email],
+    form textarea,
+    form select {
+        background-color: lightslategray;
+        box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
 }
