@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+}
+
+#hero1 {
+    background-image: url("../assets/images/jack-atkinson-QMx15QE-6lM-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    position: relative;
+    transition: filter 0.5s;
+
+}
+
+#hero1:hover {
+    filter: blur(2px);
+}
+
+
+#hero1 h1 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+}
+
+p {
+    font-size: 32px;
+    margin: 48px;
+}
+
+#hero2 {
+    height: 100vh;
+    background-image: url("../assets/images/behnam-norouzi-DIymcAvhdEc-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero2 h2,
+#hero3 h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+}
+
+#hero2 h3,
+#hero3 h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+}
+
+#hero3  {
+    background-image: url(../assets/images/te-lun-ou-yang-y-oGGT2_5Qg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#hero3 h2 {
+    padding-top: 60px;
+}
+
+#hero3 h3 {
+    padding-bottom: 60px;
+}
