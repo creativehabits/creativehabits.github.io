@@ -25,7 +25,7 @@ p {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 30x;
   margin-bottom: 0;
 }
 
@@ -41,7 +41,7 @@ a {
 nav,
 nav a,
 footer a {
-  color: indigo;
+  color: red;
 }
 
 nav a:hover,
@@ -144,7 +144,7 @@ nav h2 {
 
 #hero {
   color: white;
-  background-image: url("../assets/images/abstractBackground.jpg");
+  background-image: url("../assets/images/dan-meyers-0AgtPoAARtE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
