@@ -10,6 +10,7 @@
 
 body {
   margin: 0;
+  background-color: #e1a177;
 }
 
 h1,
@@ -25,7 +26,7 @@ p {
 }
 
 h1 {
-  font-size: 30x;
+  font-size: 60px;
   margin-bottom: 0;
 }
 
@@ -41,12 +42,12 @@ a {
 nav,
 nav a,
 footer a {
-  color: red;
+  color: black;
 }
 
 nav a:hover,
 footer a:hover {
-  color: purple;
+  color: whitesmoke;
   text-decoration: underline;
 }
 
@@ -122,12 +123,12 @@ nav .socialMedia {
 nav,
 nav a,
 footer a {
-  color: indigo;
+  color: black;
 }
 
 nav a:hover,
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 nav ul,
@@ -162,8 +163,8 @@ nav h2 {
 #hero a,
 .card a {
   background-color: white;
-  color: indigo;
-  border: 2px solid indigo;
+  color: black;
+  border: 2px solid black;
   border-radius: 24px;
   display: inline-block;
   padding: 8px 16px;
@@ -186,8 +187,8 @@ nav h2 {
 }
 
 .card {
-  border: 2px solid indigo;
-  color: indigo;
+  border: 2px solid black;
+  color: black;
   margin: 48px 24px 24px;
   padding: 12px 12px 24px;
   text-align: center;
@@ -199,6 +200,8 @@ nav h2 {
   font-size: 18px;
   min-height: 100px;
 }
+
+
 
 /****************************************************************************
   Gallery styles
@@ -242,4 +245,19 @@ nav h2 {
     margin: 4px 0;
   }
 
+}
+
+
+#gallery a {
+  background-color: black;
+  border: none;
+}
+
+.btn.btn-primary {
+  color: white;
+}
+
+#gallery div img {
+  height: 200px;
+  object-fit: cover;
 }
