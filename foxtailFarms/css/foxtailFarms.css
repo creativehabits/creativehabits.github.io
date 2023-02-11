@@ -1,5 +1,7 @@
 /* Google Font API imports - found at https://fonts.google.com/ */
-@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Secular+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Secular+One&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*****************************************************************************
   Heading, Link, and Misc. Styles
@@ -15,13 +17,13 @@ body {
 
 h1,
 h2,
-h3,
-a {
-  font-family: 'Secular One', sans-serif;
+h3 {
+  font-family: 'Lobster', 'cursive';
 }
 
 h4,
-p {
+p,
+a {
   font-family: 'Assistant', sans-serif;
 }
 
@@ -37,6 +39,10 @@ h4 {
 
 a {
   text-decoration: none;
+}
+
+.btn.btn-primary {
+  color: white;
 }
 
 nav,
@@ -210,6 +216,16 @@ nav h2 {
   text-align: center;
 }
 
+#gallery div img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#gallery a {
+  background-color: black;
+  border: none;
+}
+
 /****************************************************************************
   Carousel Styles
 ****************************************************************************/
@@ -245,19 +261,4 @@ nav h2 {
     margin: 4px 0;
   }
 
-}
-
-
-#gallery a {
-  background-color: black;
-  border: none;
-}
-
-.btn.btn-primary {
-  color: white;
-}
-
-#gallery div img {
-  height: 200px;
-  object-fit: cover;
 }
