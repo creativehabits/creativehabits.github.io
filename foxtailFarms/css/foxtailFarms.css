@@ -166,6 +166,8 @@ nav h2 {
   Link styles
 ****************************************************************************/
 
+
+
 #hero a,
 .card a {
   background-color: white;
@@ -191,6 +193,17 @@ nav h2 {
 .twoCards {
   display: flex;
 }
+
+.threeCards a {
+  color: white;
+  background-color: black;
+}
+
+.threeCards img {
+  max-height: 100%;
+  object-fit: cover;
+}
+
 
 .card {
   border: 2px solid black;
