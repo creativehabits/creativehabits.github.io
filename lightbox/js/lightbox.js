@@ -8,8 +8,21 @@ function openLightbox() {
     lightbox.src = this.src;
 }
 
-let coffeeImage = document.getElementById("coffeeImage");
-coffeeImage.onclick = openLightbox;
+// let coffeeImage = document.getElementById("coffeeImage");
+// coffeeImage.onclick = openLightbox;
+
+let marchTen = document.getElementById("marchTen");
+marchTen.onclick = openLightbox;
+
+let marchThird = document.getElementById("marchThird");
+marchThird.onclick = openLightbox;
+
+let marchTwentyFour = document.getElementById("marchTwentyFour");
+marchTwentyFour.onclick = openLightbox;
+
+let marchThirtyFirst = document.getElementById("marchThirtyFirst");
+marchThirtyFirst.onclick = openLightbox;
+
 
 function closeLightbox() {
     lightboxContainer.classList.remove("display");
