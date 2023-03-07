@@ -1,3 +1,7 @@
+body {
+  margin: 0px;
+}
+
 /*
   This global setting affects ALL elements, and forces them to
   apply heights and widths based on the element border, not the content.
@@ -91,4 +95,47 @@
     width: 80%;
     height: auto;
   }
+}
+
+
+
+#topHeader {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: white;
+  padding: 12px;
+}
+
+#topHeader a {
+  text-decoration: none;
+}
+
+#netflixLogo {
+  margin-right: auto;
+}
+
+#bottomHeader {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+}
+
+#price {
+  font-weight: bold;
+}
+
+#topLink {
+  margin-left: 15px;
+}
+
+#netflixLogo {
+  height: 30px;
+  margin-top: 24px;
+}
+
+#hero {
+  background-image: url("../images/netflixBG.jpg");
+  background-size: cover;
+  position:relative;
+  height: 500px;
 }
