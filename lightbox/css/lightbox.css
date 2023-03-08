@@ -135,10 +135,13 @@ body {
 }
 
 #hero {
-  background-image: url("../images/netflixBG.jpg");
+  background-image: 
+    radial-gradient(transparent 25%, black),  
+    url("../images/netflixBG.jpg");
   background-size: cover;
   position:relative;
-  height: 500px;
+  min-height: 500px;
+  padding: 10px;
 }
 
 #new {
@@ -152,12 +155,12 @@ body {
 }
 
 #heroText {
-  padding: 75px 0;
-  /* padding-bottom: 300px; */
-  /* max-width: 950px; */
+  /* padding: 75px 0; */
+  margin: 100px auto;
+  max-width: 640px;
   position: relative;
   text-align: center;
-  width: 100%;
+  /* width: 100%; */
   font-family: sans-serif;
   color:white;
   /* display: flex;
@@ -193,7 +196,7 @@ body {
   background: 0, 0, 0, 0;
   color: white;
   margin-right: 24px;
-  padding: 5px;
+  padding: 5px 24px;
 }
 
 #signIn {
@@ -201,7 +204,7 @@ body {
   border-radius: 5px;
   border: none;
   color: white;
-  padding: 5px;
+  padding: 5px 24px;
 }
 
 h4 {
