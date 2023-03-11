@@ -1,0 +1,145 @@
+body {
+    margin: 0px;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.disneyPlusLogo {
+    width: 70px;
+    margin-right: auto;
+}
+
+
+#topHeader {
+    display: flex;
+    margin: 24px;
+}
+
+
+#signUp {
+    background-color: cornflowerblue;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 10px;
+}
+
+#logIn {
+    background: 0, 0, 0, 0;
+    border: solid white 1px;
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+}
+
+#hero {
+    background-image: url("../assets/images/backgroundLarge.jpg");
+    min-height: 500px;
+    background-size: cover;
+    position: relative;
+    margin: 24px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#terms {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+#planOptions {
+    font-size: small;
+    text-decoration: underline;
+    margin-top: 60px;
+}
+
+#emailInput {
+    width: 300px;
+    height: 30px;
+}
+
+#getTheBundle {
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#threeLogo {
+    width: 300px;
+}
+
+#disneyAndMore {
+    width: 450px;
+}
+
+#gridTitle {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+#gridTitle li:hover {
+    text-decoration: underline;
+}
+
+#grid.threeColumns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#grid img {
+    width: 100%;
+    margin: 12px;
+}
+
+.img {
+    margin: 10px;
+}
+
+#footerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+}
+
+.footerInfo {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 24px;
+}
+
+.footerInfo li {
+    margin: auto 12px;
+}
+
+#footerLogo {
+    width: 70px;
+}
+
+@media screen and (max-width: 480px) {
+    /* body {
+        background-color: white;
+    } */
+
+    #emailInput {
+        width: 200px;
+    }
+}
