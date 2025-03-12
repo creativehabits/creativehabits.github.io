@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+h3 {
+    color: black;
+}
+
+p {
+    color: black
+}
+
+a {
+    text-decoration: none;
+}
+
+#contentContainer {
+    grid-area: contentArea;
+  }
+
+/*********
+Card Styles
+***********/
+
+.fiveCards {
+    display: flex;
+}
+
+.fiveCards a {
+    color: white;
+    background-color: black;
+}
+
+.fiveCards img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.card {
+  border: 2px solid black;
+  color: white;
+  margin: 48px 24px 24px;
+  padding: 12px 12px 24px;
+  text-align: center;
+  box-shadow: 4px 4px 8px 0px grey;
+  flex: 1;
+}
+
+.card p {
+    font-size: 18px;
+    min-height: 100px;
+  }
+
+/************
+link style
+************/
+
+.card a {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 12px;
+    min-width: 150px;
+    transition: transform 0.25s;
+  }
+
+.card a:hover {
+  transform: scale(1.05);
+}
+
+
+/*******
+Media Query
+********/
+
+  @media screen and (max-width: 1000px) {
+      .fiveCards {
+          flex-direction: column;
+      }
+      
+      img {
+          object-fit: cover;
+          max-width: 400px;
+      }
+  }
