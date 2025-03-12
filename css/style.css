@@ -83,6 +83,6 @@ Media Query
       
       img {
           object-fit: cover;
-          max-width: 400px;
+          max-width: 200px;
       }
   }
