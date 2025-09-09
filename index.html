@@ -2,70 +2,365 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vema Main HUB</title>
-    <link href="css/style.css" rel="stylesheet">
+    <title>Vema Operations HUB</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            color: #64748b;
+            font-size: 1rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.25rem;
+        }
+
+        .section-description {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: #3b82f6;
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .card-link:hover {
+            background-color: #2563eb;
+        }
+
+        /* Category-specific button colors */
+        .valet-ops .card-link {
+            background-color: #3b82f6;
+        }
+        
+        .valet-ops .card-link:hover {
+            background-color: #2563eb;
+        }
+
+        .hr .card-link {
+            background-color: #059669;
+        }
+        
+        .hr .card-link:hover {
+            background-color: #047857;
+        }
+
+        .scheduling .card-link {
+            background-color: #7c3aed;
+        }
+        
+        .scheduling .card-link:hover {
+            background-color: #6d28d9;
+        }
+
+        .reporting .card-link {
+            background-color: #dc2626;
+        }
+        
+        .reporting .card-link:hover {
+            background-color: #b91c1c;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            
+            .header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-    <body>
-        <section id="contentContainer">
-            <section class="fiveCards container">
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Vema Operations HUB</h1>
+            <p>Quick access to all operational systems and tools</p>
+        </header>
+
+        <!-- Valet Operations Section -->
+        <section class="section valet-ops">
+            <div class="section-header">
+                <h2 class="section-title">Valet Operations</h2>
+                <p class="section-description">VemaPOS systems for all property locations</p>
+            </div>
+            <div class="grid">
                 <div class="card">
                     <h3>Neo Vertika</h3>
-                    <img
-                        src="assets/images/Neo.jpg"
-                        class="card-img-top"
-                        alt="building">
-                    <p>
-                        Vema for Neo Vertika
-                    </p>
-                    <a href="https://www.valetparkingsoftware.com/nv/vertika/index.php?v=3">Click Me</a>
+                    <p>VemaPOS for Neo Vertika</p>
+                    <a href="https://www.valetparkingsoftware.com/nv/vertika/index.php?v=3" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open System
+                    </a>
                 </div>
+
                 <div class="card">
                     <h3>My Brickell</h3>
-                    <img
-                        src="assets/images/myBrickell.jpg"
-                        class="card-img-top"
-                        alt="building">
-                    <p>
-                        Vema for My Brickell
-                    </p>
-                    <a href="https://www.valetparkingsoftware.com/luxe/mbm/index.php?v=3">Click Me</a>
+                    <p>VemaPOS for My Brickell</p>
+                    <a href="https://www.valetparkingsoftware.com/luxe/mbm/index.php?v=3" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open System
+                    </a>
                 </div>
+
                 <div class="card">
                     <h3>Icon Bay</h3>
-                    <img
-                        src="assets/images/iconBay.jpg"
-                        class="card-img-top"
-                        alt="building">
-                    <p>
-                        Vema for Icon Bay
-                    </p>
-                    <a href="https://www.valetparkingsoftware.com/luxe/ibm/index.php?v=3">Click Me</a>
+                    <p>VemaPOS for Icon Bay</p>
+                    <a href="https://www.valetparkingsoftware.com/luxe/ibm/index.php?v=3" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open System
+                    </a>
                 </div>
+
                 <div class="card">
                     <h3>Amara</h3>
-                    <img
-                        src="assets/images/Amara.jpg"
-                        class="card-img-top"
-                        alt="building">
-                    <p>
-                        Vema for Amara
-                    </p>
-                    <a href="https://www.valetparkingsoftware.com/luxe/amara/">Click Me</a>
+                    <p>VemaPOS for Amara</p>
+                    <a href="https://www.valetparkingsoftware.com/luxe/amara/" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open System
+                    </a>
                 </div>
+
                 <div class="card">
                     <h3>Solemar</h3>
-                    <img
-                        src="assets/images/Solemar.jpg"
-                        class="card-img-top"
-                        alt="building">
-                    <p>
-                        Vema for Solemar
-                    </p>
-                    <a href="https://www.valetparkingsoftware.com/luxe/spb/index.php?v=3">Click Me</a>
+                    <p>VemaPOS for Solemar</p>
+                    <a href="https://www.valetparkingsoftware.com/luxe/spb/index.php?v=3" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open System
+                    </a>
                 </div>
-            </section>
+            </div>
         </section>
-    </body>
+
+        <!-- Operations & Admin Section -->
+        <section class="section hr">
+            <div class="section-header">
+                <h2 class="section-title">Operations & Admin</h2>
+                <p class="section-description">HR, scheduling, forms, and monitoring tools</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>BambooHR</h3>
+                    <p>Employee management and HR portal</p>
+                    <a href="https://luxeparkingmanagement.bamboohr.com/login.php" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open BambooHR
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>When I Work</h3>
+                    <p>Employee scheduling and time management</p>
+                    <a href="https://login.wheniwork.com/accounts" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open Scheduling
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Formstack</h3>
+                    <p>Form creation and data collection</p>
+                    <a href="https://admin.formstack.com/login" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open Formstack
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>SMS Valet</h3>
+                    <p>SMS communication portal</p>
+                    <a href="https://portal.smsvalet.com" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open SMS Portal
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>SMS Valet (Lenz)</h3>
+                    <p>Lenz reporting system</p>
+                    <a href="https://lenz.tez.io" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Open Lenz
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Nest Cameras</h3>
+                    <p>Security camera monitoring</p>
+                    <a href="https://home.nest.com/login" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        View Cameras
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Background Checks Section -->
+        <section class="section scheduling">
+            <div class="section-header">
+                <h2 class="section-title">Background Checks</h2>
+                <p class="section-description">Employee verification and background screening tools</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Traffic Citation Search</h3>
+                    <p>Miami-Dade traffic citation lookup</p>
+                    <a href="https://www2.miamidadeclerk.gov/trafficapp/allsearches.aspx?AspxAutoDetectCookieSupport=1" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Search Citations
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Criminal Search</h3>
+                    <p>Miami-Dade criminal records search</p>
+                    <a href="https://www2.miamidadeclerk.gov/cjis/" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Search Records
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>FL License Check</h3>
+                    <p>Florida driver license verification</p>
+                    <a href="https://services.flhsmv.gov/DLCheck/HomeView.aspx" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Check License
+                    </a>
+                </div>
+
+                <div class="card">
+                    <h3>Broward Case Search</h3>
+                    <p>Broward County case records</p>
+                    <a href="https://www.browardclerk.org/Web2" 
+                       class="card-link" 
+                       target="_blank" 
+                       rel="noopener noreferrer">
+                        Search Cases
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
 </html>
